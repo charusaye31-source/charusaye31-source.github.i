@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Charu's student portfolio - Information Technology, learning, and project ideas.">
+  <title>Charu | IT Student Portfolio</title>
+  <style>
+    :root { --navy:#14213d; --blue:#2563eb; --pale:#eff6ff; --ink:#172033; --muted:#596579; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--ink); background:#f8fafc; line-height:1.65; }
+    header { background:linear-gradient(135deg,#14213d,#2563eb); color:white; padding:22px 7%; }
+    nav { max-width:1050px; margin:auto; display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; }
+    .brand { font-size:1.15rem; font-weight:800; letter-spacing:.3px; }
+    nav a { color:white; text-decoration:none; margin-left:18px; font-size:.95rem; }
+    nav a:hover { text-decoration:underline; }
+    .hero { max-width:1050px; margin:auto; padding:78px 7% 85px; display:grid; grid-template-columns:1.5fr 1fr; align-items:center; gap:35px; }
+    .eyebrow { text-transform:uppercase; letter-spacing:2px; font-size:.78rem; font-weight:700; color:#bfdbfe; }
+    h1 { font-size:clamp(2.5rem,6vw,4.4rem); line-height:1.06; margin:12px 0 20px; }
+    .hero p { max-width:600px; font-size:1.12rem; color:#e8efff; }
+    .button { display:inline-block; margin-top:15px; padding:12px 20px; background:white; color:#1d4ed8; border-radius:9px; font-weight:700; text-decoration:none; }
+    .hero-card { background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.25); border-radius:22px; padding:30px; text-align:center; }
+    .avatar { width:120px; height:120px; margin:0 auto 15px; border-radius:50%; background:#dbeafe; color:#1d4ed8; display:grid; place-items:center; font-size:2.5rem; font-weight:800; }
+    .hero-card p { font-size:.96rem; margin-bottom:0; }
+    main { max-width:1050px; margin:auto; padding:0 7%; }
+    section { padding:55px 0; }
+    h2 { font-size:1.8rem; margin:0 0 12px; color:var(--navy); }
+    .intro { color:var(--muted); max-width:720px; margin-top:0; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:24px; }
+    .card { background:white; padding:23px; border-radius:15px; border:1px solid #e2e8f0; box-shadow:0 7px 20px rgba(15,23,42,.04); }
+    .card h3 { margin:0 0 9px; color:#1d4ed8; }
+    .tag { display:inline-block; background:var(--pale); color:#1d4ed8; padding:5px 10px; margin:5px 5px 0 0; border-radius:20px; font-size:.85rem; }
+    .project { border-left:4px solid var(--blue); }
+    .contact { background:#eaf1ff; padding:28px; border-radius:18px; }
+    .contact a { color:#1d4ed8; font-weight:700; }
+    footer { text-align:center; padding:25px; color:var(--muted); font-size:.9rem; }
+    @media (max-width:700px) { .hero { grid-template-columns:1fr; padding-top:52px; } .grid { grid-template-columns:1fr; } nav a { margin:0 12px 0 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="brand">CHARU<span style="color:#bfdbfe">.</span></div>
+      <div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Project</a><a href="#contact">Contact</a></div>
+    </nav>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">First-year Information Technology student</div>
+        <h1>Hello, I'm Charu.</h1>
+        <p>I'm beginning my journey in technology, learning programming step by step, and exploring how software can solve real-world problems.</p>
+        <a class="button" href="#projects">Explore my project idea ↓</a>
+      </div>
+      <div class="hero-card">
+        <div class="avatar">C</div>
+        <h2 style="color:white;margin-bottom:4px">Learner. Thinker. Builder.</h2>
+        <p>Curious about software development, problem-solving, and creating useful digital experiences.</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="intro">I am a first-year Information Technology student at Sri Sai Ram Engineering College. My goal is to become a skilled software engineer. I enjoy learning new things and want to strengthen both my technical knowledge and communication skills.</p>
+    </section>
+    <section id="skills">
+      <h2>Skills & Learning</h2>
+      <p class="intro">I'm at the beginning of my learning journey and building my skills one step at a time.</p>
+      <div class="card">
+        <span class="tag">C Programming — Beginner</span>
+        <span class="tag">Python — Learning</span>
+        <span class="tag">HTML & CSS — Exploring</span>
+        <span class="tag">Problem-solving</span>
+        <span class="tag">Communication</span>
+        <span class="tag">Quick learner</span>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Project Idea</h2>
+      <p class="intro">An early concept I'm interested in exploring for safer, smarter public spaces.</p>
+      <div class="card project">
+        <h3>Smart Temple Crowd Management</h3>
+        <p><strong>Problem:</strong> Large crowds at temples can make it difficult to monitor entry, exit, and congestion.</p>
+        <p><strong>Idea:</strong> A future system could use people-counting sensors to estimate crowd levels and help organizers manage entry flow.</p>
+        <p><strong>Current status:</strong> Concept idea for learning and discussion; a working sensor system has not yet been built.</p>
+        <span class="tag">Smart Communities</span><span class="tag">Safety</span><span class="tag">IoT — Exploring</span>
+      </div>
+    </section>
+    <section id="goals">
+      <h2>My Goals</h2>
+      <div class="grid">
+        <div class="card"><h3>Learn</h3><p>Build strong fundamentals in programming and computer science.</p></div>
+        <div class="card"><h3>Create</h3><p>Practice by making small projects and gradually improve them.</p></div>
+        <div class="card"><h3>Grow</h3><p>Improve communication, teamwork, and problem-solving skills.</p></div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact">
+        <h2>Let's Connect</h2>
+        <p>I'm open to learning opportunities, student activities, and beginner-friendly collaborations.</p>
+        <p>To add your email or LinkedIn, edit this page and replace this sentence with your preferred public contact details.</p>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 Charu · Student Portfolio</footer>
+</body>
+</html>
